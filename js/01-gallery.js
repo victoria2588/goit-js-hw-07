@@ -25,7 +25,7 @@ listEl.addEventListener("click", onClick);
 
 function onClick(event) {
   event.preventDefault();
-  if (event.target.nodeName !== "BUTTON") {
+  if (event.target.nodeName === "IMG") {
     const instance = basicLightbox.create(`
     <img src='${event.target.dataset.source}' width="800" height="600">
 `);
