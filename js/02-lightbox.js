@@ -13,7 +13,7 @@ function createGalleryItems(items) {
       return `<li class="gallery__item">
     <a class="gallery__link" href="${original}">
      <img class="gallery__image"
-    src="${preview}" alt="${description}" title="${description}"
+    src="${preview}" alt="${description}"
     />
     </a>
     </li>`;
@@ -23,5 +23,5 @@ function createGalleryItems(items) {
 let lightbox = new SimpleLightbox(".gallery a", {
   captions: true,
   captionDelay: 250,
-  captionData: "title",
+  captionsData: "alt",
 });
